@@ -28,7 +28,7 @@ export default function Page() {
             {linkWhatsapp && (
                 <Link href={linkWhatsapp.href} target='_blank'>
                     <button
-                        aaria-label='Abrir WhatsApp'
+                        aria-label='Abrir WhatsApp'
                         title='Abrir WhatsApp'
                         className='flex justify-center items-center bg-[#59D264] rounded-full fixed bottom-5 right-5 hover:cursor-pointer hover:bg-[#4ead55] duration-200 z-50 w-12 h-12'
                     >

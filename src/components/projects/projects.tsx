@@ -59,6 +59,14 @@ export default function Projects() {
                     >
                         Mobile Applications
                     </li>
+                    <li
+                        onClick={() => setFilter('api')}
+                        className={`max-sm:hidden cursor-pointer ${
+                            filter === 'api' ? 'text-purple-600' : ''
+                        }`}
+                    >
+                        APIs / Backends
+                    </li>
                 </ul>
             </div>
 
@@ -104,7 +112,7 @@ export default function Projects() {
                                         <img
                                             src={item.image}
                                             alt={item.name}
-                                            className='w-full h-full object-contain'
+                                            className='w-full h-full object-fill'
                                         />
                                     </div>
                                 )}
